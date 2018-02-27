@@ -15,8 +15,6 @@ if [ $confirm == "y" ] ; then
     echo "make a link to the new file"
     /bin/ln -s $PATH/.zshrc ~/.zshrc 
     source ~/.zshrc
+    /bin/chsh -s /bin/zsh $USER
 fi
 echo "Done!"
-echo "if you want to set zsh as the main shell edit the file:"
-echo "/etc/password"
-echo "switch on your end of line user from /bin/bash to /bin/zsh"
